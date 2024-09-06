@@ -7,3 +7,28 @@ cd -- use to navigate directory
 rmdir -- use to remove directory from the folder.
 
 --help -- use to get all the commands related to a command.
+
+pwd -- use to get the path of current working directory.
+
+
+steps of git working
+staging area --- 
+
+
+
+git branch use to create or modify branch
+git branch -M 'Branch Name'
+
+git checkout "Branch Name" -- it will change the branch of the git 
+
+git pull use to fetch all the changes from the GitHub it's different from git clone 
+
+git clone -- use to copy repo from the GitHub to local system using http link or SSH link.
+
+git init -- use to initialize the directory as git directory by adding .git folder in it
+git status -- use to check the status of all the files 
+git log -- will provide all the log/history of all the commands
+git remote add origin "origin link" -- use to connect the repo to the GitHub account 
+git remote -- command used to make connection b/t local repo and GitHub repository.
+git checkout -- will tell us able the current branch on which we are working or to **change branch**
+git push -- use to push all the code to the GitHub account 
