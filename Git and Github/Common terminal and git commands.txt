@@ -1,0 +1,9 @@
+ls -- to List all the dir present in the folder.
+
+mkdir -- use to create a new folder 
+
+cd -- use to navigate directory
+
+rmdir -- use to remove directory from the folder.
+
+--help -- use to get all the commands related to a command.
