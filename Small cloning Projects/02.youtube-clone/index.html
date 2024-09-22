@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(28, 28, 28);
+    }
+    main{
+        display: flex;
+        height: 100%;
+    }
+    .list{
+        list-style: none;
+    }
+
+    .list > li{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: white;
+        gap: 5px;
+        font-weight: lighter;
+    }
+    .list{
+        padding-top: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(74, 74, 74);
+        padding-left: 15px;
+        font-size: 0.8em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .sidebar {
+        background-color: rgb(47, 47, 47);
+        width: 15%;
+        padding-top: 15px;
+    }
+    .logo-container{
+        display: flex;
+        gap: 10px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    .search-section{
+        border: 1px solid rgb(82, 82, 82);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+
+        margin-left: 28%;
+    }
+    .search-section > input {
+        height: 100%;
+        padding: 5px;
+        font-size: 1em;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    .search-section > button {
+        background-color: #828282;
+        border: none;
+        outline: none;
+        height: 100%;
+        padding: 4px 15px;
+    }
+    .searchbar-Section{
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: 1px solid rgb(53, 53, 53);
+    }
+    .right-container{
+        width: 100%;
+    }
+    .profile-icons-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 15px;
+        gap: 5px;
+    }
+    .searchbar-Section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contentCtg{
+        padding: 7px 15px;
+        border-radius: 100px;
+        background-color: rgba(128, 128, 128, 0.189);
+        font-size: smaller;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .category-slide{
+        display: flex;
+        gap: 12px;
+        padding: 8px 7px;
+        border-bottom: 1px solid rgb(53, 53, 53);
+        color: white;
+    }
+    .content-row{
+        display: flex;
+        gap: 20px;
+        padding: 15px;
+    }
+    .video-details{
+        display: flex;
+    }
+    .card-container{
+        width: fit-content;
+        max-width: 242px;
+        color: white;
+    }
+    .other-details > h3, .other-details > p, .other-details > span{
+        margin: 0 15px;
+    }
+
+</style>
+
+<body>
+
+    <main>
+
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="/assets/hambarger.png" alt="">
+                <img src="/assets/Youtube%20logo.png"
+                    alt="">
+            </div>
+
+            <ul class="options-section1 list">
+                <li>
+                    <img src="/assets/home.png" alt=""> <span>Home</span>
+                </li>
+                <li>
+                    <img src="/assets/explore.png" alt=""><span>Explore</span>
+                </li>
+                <li>
+                    <img src="/assets/shorts.png" alt=""><span>Shorts</span>
+                </li>
+                <li>
+                    <img src="/assets/subscription.png" alt="">
+                    <span>Subscription</span>
+                </li>
+            </ul>
+
+            <ul class="options-section2 list">
+                <li>
+                    <img src="/assets/library.png" alt="">
+                    <span>Library</span>
+                </li>
+                <li>
+                    <img src="/assets/history.png" alt="">
+                    <span>History</span>
+                </li>
+                <li>
+                    <img src="/assets/your_video.png" alt="">
+                    <span>Your Videos</span>
+                </li>
+                <li>
+                    <img src="/assets/watch_later.png" alt="">
+                    <span>Watch Later</span>
+                </li>
+                <li>
+                    <img src="/assets/liked.png" alt="">
+                    <span>Liked Videos</span>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <span>Show more</span>
+                </li>
+
+            </ul>
+            <ul class="options-section3 list">
+                <li>
+                    <img src="/assets/Ellipse%201%20(6).png" alt="">
+                    <span>Nadir On The Go</span>
+                </li>
+                <li>
+                    <img src="/assets/Ellipse%201%20(1).png" alt="">
+                    <span>Coke Studio Bangla</span>
+                </li>
+                <li>
+                    <img src="/assets/Ellipse%201%20(4).png" alt="">
+                    <span>MKBHD</span>
+                </li>
+                <li>
+                    <img src="/assets/Ellipse%201%20(3).png" alt="">
+                    <span>Figma</span>
+                </li>
+                <li>
+                    <img src="/assets/Ellipse%201%20(2).png" alt="">
+                    <span>ATC Android</span>
+                </li>
+                <li>
+                    <img src="/assets/Ellipse%201%20(5).png" alt="">
+                    <span>Alux.com</span>
+                </li>
+                
+
+            </ul>
+
+        </div>
+        <div class="right-container">
+
+            <div class="searchbar-Section">
+
+                <div class="search-section">
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <img src="/assets/search.png" alt="">
+                    </button>
+                </div>
+                <div class="profile-icons-container">
+                    <img src="/assets/create.png" alt="">
+                    <img src="/assets/more.png" alt="">
+                    <img src="/assets/bell.png" alt="">
+                    <img src="/assets/Ellipse%204%20(1).png" alt="">
+                </div>
+
+            </div>
+
+            <div class="category-slide">
+                <div class="contentCtg">All</div>
+                <div class="contentCtg">Cook Studio</div>
+                <div class="contentCtg">UX</div>
+                <div class="contentCtg">Music</div>
+                <div class="contentCtg">Travel</div>
+                <div class="contentCtg">Tour</div>
+                <div class="contentCtg">IPhone13</div>
+                <div class="contentCtg">New Technologies</div>
+                <div class="contentCtg">Finances</div>
+                <div class="contentCtg">UX</div>
+                <div class="contentCtg">Music</div>
+                <div class="contentCtg">Travel</div>
+                <div class="contentCtg">Tour</div>
+                <div class="contentCtg">Finances</div>
+                <div class="contentCtg">Tour</div>
+            </div>
+
+            <div class="main-content-section">
+
+                <div class="firstRow content-row">
+
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-1.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-9.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-6.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-5.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-11.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="secondRow content-row">
+
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-10.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-9.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-8.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-7.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-6.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="thirdRow content-row">
+
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-1.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-2.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-3.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-4.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="thumbnail-container">
+                            <img src="/assets/Thumbnail-5.png" alt="">
+                        </div>
+                        <div class="video-details">
+                            <div class="chennal-image">
+                                <img src="/assets/Ellipse 1 (1).png" alt="">
+                            </div>
+                            <div class="other-details">
+                                <h3>Title</h3>
+                                <p>Lorem, ipsum dolor </p>
+                                <span>Views</span>
+                                <span>2days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

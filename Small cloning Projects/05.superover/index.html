@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: url('https://assets.mspimages.in/gear/wp-content/uploads/2022/10/T20-World-Cup-1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.805);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .section2{
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+    }
+    .scoreCard1{
+        height: fit-content;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 50px 75px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 6em;
+        margin-bottom: 10px;
+    }
+    .score{
+        display: flex;
+        gap: 10px;
+    }
+    .score > div {
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        font-size: 2.5em;
+        padding: 9px;
+    }
+    h2{
+        font-size: 3.7em;
+        font-weight: bolder;
+    }
+    .finalSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 35px;
+    }
+    .miniCard{
+        width: 85px;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: orange;
+        border: 4px solid white;
+        box-shadow: 0px 6px 0px 0px white;
+    }
+    .miniCard > img{
+        width: 65px;
+        height: 65px;
+    }
+    .heading > img {
+        width: 45px;
+        height: 45px;
+
+    }
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        gap: 10px;
+        padding: 25px;
+    }
+    .heading > p{
+        line-height: 23px;
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+        <div class="heading">
+            <img src="https://th.bing.com/th/id/OIP.oEKOOVrGb9fblRBuLyeUmwHaGy?rs=1&pid=ImgDetMain" alt="">
+            <p>Super <br> over</p>
+        </div>
+        <div class="section2">
+            <div class="scoreCard1" style="background-color: rgb(38, 59, 108);">
+                <h1>IND</h1>
+                <div class="score">
+                    <div class="singleScore">4</div>
+                    <div class="singleScore">3</div>
+                    <div class="singleScore">2</div>
+                    <div class="singleScore">6</div>
+                    <div class="singleScore">6</div>
+                    <div class="singleScore">6</div>
+                </div>
+                <h2>27/0</h2>
+            </div>
+            <div class="scoreCard1">
+                <h1>IND</h1>
+                <div class="score">
+                    <div class="singleScore">4</div>
+                    <div class="singleScore">3</div>
+                    <div class="singleScore">2</div>
+                    <div class="singleScore">6</div>
+                    <div class="singleScore">6</div>
+                    <div class="singleScore">6</div>
+                </div>
+                <h2>27/0</h2>
+            </div>
+        </div>
+        <div class="finalSection">
+            <div class="miniCard">
+                <img src="https://cdn-icons-png.flaticon.com/512/5140/5140406.png" alt="">
+            </div>
+            <div class="miniCard">
+                <img src="https://cdn-icons-png.flaticon.com/512/82/82004.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
