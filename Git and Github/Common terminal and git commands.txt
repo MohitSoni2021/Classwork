@@ -10,11 +10,8 @@ rmdir -- use to remove directory from the folder.
 
 pwd -- use to get the path of current working directory.
 
-
 steps of git working
 staging area --- 
-
-
 
 git branch use to create or modify branch
 git branch -M 'Branch Name'
